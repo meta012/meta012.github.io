@@ -2,29 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meta's Portfolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/8ed8d84587.js" crossorigin="anonymous"></script>
     <!-- STYLES -->
     <link rel="stylesheet" href="css/app.css">
   </head>
+
   <body>
 
-    <div class="wrapper">
-      <header>
-        <h1 class="brand">brightside studios inc.</h1>
+    <!-- NAVBAR -->
+    <header class="main-header">
+      <div class="logo">
+        <a href="#">LOGO</a>
+      </div>
 
-        <nav>
-          <ul>
-            <li><a href=#>About me</a></li>
-            <li><a href=#>Projects</a></li>
-            <li><a href=#>Contact</a></li>
-          </ul>
-        </nav>
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="menu-icon__line"></span>
+      </label>
 
-      </header>
+      <ul class="nav-links">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="#">About Me</a></li>
+        <li class="nav-link"><a href="#">Projects</a></li>
+        <li class="nav-link"><a href="#">Contact</a></li>
+      </ul>
 
+    </header>
+
+
+    <div class="hero">
+      <h1>Hero Text</h1>
+    </div>
+
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu consectetur tortor, vel interdum orci. Quisque mi diam, consectetur in sem eu, placerat commodo velit. Morbi vel risus quis magna convallis elementum. Vestibulum urna massa, condimentum nec ullamcorper id, sodales vitae libero. Vivamus pellentesque tellus massa, a ornare ex sagittis a. Aenean et ex lacus. Quisque tincidunt porta ligula, a tincidunt elit vestibulum ut. Sed at lacus sit amet sem lobortis suscipit et sed neque. Fusce suscipit dolor id libero elementum vestibulum. Aenean scelerisque arcu sed dignissim iaculis. In tempus ut justo vel accumsan.</p>
+      <p>Maecenas eu orci magna. Nunc non laoreet mi. Maecenas mattis feugiat justo et auctor. Nullam pulvinar egestas est sit amet placerat. Fusce sollicitudin tellus dictum ornare bibendum. Praesent ac ex odio. Etiam congue malesuada hendrerit. Suspendisse potenti. Vestibulum pretium aliquam lorem et blandit.</p>
+      <p>Donec eget arcu risus. Ut posuere placerat semper. In dapibus fermentum ex quis aliquet. Mauris eu placerat magna. Vestibulum vitae egestas ante. Ut erat mi, facilisis at risus auctor, varius tincidunt lectus. Nam ut ullamcorper urna. Ut vel pharetra augue. Morbi est nisl, vulputate tristique rutrum nec, mattis sed quam. Curabitur justo ante, commodo quis lorem et, venenatis fermentum mauris. Nam venenatis at erat a dapibus. Quisque lacinia mauris et tempor posuere.</p>
+      <p>Nam dapibus commodo massa, ut feugiat diam volutpat vel. Nulla varius, quam ut pretium blandit, eros odio accumsan ex, ut condimentum diam quam non sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin porttitor magna in mi tempus, ac rhoncus libero sagittis. Nam fermentum, est ut iaculis laoreet, nisl orci molestie odio, quis mattis ligula odio ut odio. Pellentesque justo dui, auctor eu nibh quis, cursus vulputate diam. Quisque interdum, purus id accumsan accumsan, tortor ipsum efficitur felis, non laoreet justo nunc eu elit.</p>
+      <p>Sed eu lacus auctor purus finibus luctus non sed metus. Cras eu vulputate tortor, non venenatis massa. Phasellus vitae ante tincidunt, volutpat risus a, porta lectus. Proin molestie risus mattis ullamcorper euismod. Nullam nunc mi, sagittis ut neque a, tempor bibendum nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin nec sollicitudin ante, a sollicitudin libero. Aliquam erat volutpat. Suspendisse accumsan nibh varius venenatis blandit. Suspendisse tincidunt interdum viverra. Morbi id arcu sit amet odio pretium facilisis quis a ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </div>
+
+
+
+    <!-- <div class="wrapper">
       <section class="feature">
         <img src="img/code.jpg" alt="computer">
       </section>
@@ -60,6 +84,8 @@
         Copyright &copy; 2020
       </footer>
 
-    </div>
+    </div> -->
+
+    <script src="scripts/header.js"></script>
   </body>
 </html>
