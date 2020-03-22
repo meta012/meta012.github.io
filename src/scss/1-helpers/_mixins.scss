@@ -1,4 +1,4 @@
-// GLOBAL MIXINS
+/* GLOBAL MIXINS */
 
 // media queries
 // @mixin retina {
@@ -6,3 +6,16 @@
 //         @content
 //     }
 // }
+
+@mixin bounce-in ($trans, $opac) {
+    transform: $trans;
+    transition: 
+        opacity $opac,
+        transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@mixin scroll-out ($opac) {
+    transition: 
+        opacity $opac, 
+        transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
