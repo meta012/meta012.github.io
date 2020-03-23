@@ -33,8 +33,8 @@
             width: 100vw;
             height: 100vh;
             font-size: 2rem;
-            color: #fff;
-            background: #272727;
+            color: $white;
+            background: $black;
             transition:
                 opacity 0.8s 0.5s,
                 clip-path 1s 0.5s;
@@ -81,15 +81,15 @@
             animation: pulse 1s;
 
             .menu-icon__line {
-                background: #fff;
+                background: $white;
                 animation: openMid 0.8s forwards;
 
                 &::before {
-                    background: #fff;
+                    background: $white;
                     animation: openTop 0.8s forwards;
                 }
                 &::after {
-                    background: #fff;
+                    background: $white;
                     animation: openBtm 0.8s forwards;
                 }
             }

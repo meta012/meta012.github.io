@@ -2,6 +2,11 @@
             PLUGINS 
 -------------------------------*/
 
+/* bourbon */
 @import "bourbon/bourbon";
+/* neat */
 @import "neat/neat";
+/* base */
 @import "base/base";
+/* aos */
+@import "aos/src/sass/aos.scss";

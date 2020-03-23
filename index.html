@@ -37,9 +37,16 @@
     <div class="hero">
       <p>Welcome!</p>
       <h1>My name is Mėta. <br>I'm a keen Software Engineering student</h1>
+      
+      <section class="scroll-down-btn">
+        <a href="#first-page"><span></span>See more!</a>
+      </section>
+    
     </div>
+    
+    
 
-    <div class="container">
+    <div id="first-page" class="container" data-aos='fade-down'>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu consectetur tortor, vel interdum orci. Quisque mi diam, consectetur in sem eu, placerat commodo velit. Morbi vel risus quis magna convallis elementum. Vestibulum urna massa, condimentum nec ullamcorper id, sodales vitae libero. Vivamus pellentesque tellus massa, a ornare ex sagittis a. Aenean et ex lacus. Quisque tincidunt porta ligula, a tincidunt elit vestibulum ut. Sed at lacus sit amet sem lobortis suscipit et sed neque. Fusce suscipit dolor id libero elementum vestibulum. Aenean scelerisque arcu sed dignissim iaculis. In tempus ut justo vel accumsan.</p>
       <p>Maecenas eu orci magna. Nunc non laoreet mi. Maecenas mattis feugiat justo et auctor. Nullam pulvinar egestas est sit amet placerat. Fusce sollicitudin tellus dictum ornare bibendum. Praesent ac ex odio. Etiam congue malesuada hendrerit. Suspendisse potenti. Vestibulum pretium aliquam lorem et blandit.</p>
       <p>Donec eget arcu risus. Ut posuere placerat semper. In dapibus fermentum ex quis aliquet. Mauris eu placerat magna. Vestibulum vitae egestas ante. Ut erat mi, facilisis at risus auctor, varius tincidunt lectus. Nam ut ullamcorper urna. Ut vel pharetra augue. Morbi est nisl, vulputate tristique rutrum nec, mattis sed quam. Curabitur justo ante, commodo quis lorem et, venenatis fermentum mauris. Nam venenatis at erat a dapibus. Quisque lacinia mauris et tempor posuere.</p>
@@ -49,7 +56,7 @@
 
 
 
-    <!-- <div class="wrapper">
+    <div class="wrapper" data-aos='fade-down'>
       <section class="feature">
         <img src="img/code.jpg" alt="computer">
       </section>
@@ -85,8 +92,18 @@
         Copyright &copy; 2020
       </footer>
 
-    </div> -->
+    </div> 
+
+
+
 
     <script src="src/scripts/header.js"></script>
+    <script src="src/scripts/scroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script >
+      AOS.init();
+    </script>
+
+
   </body>
 </html>

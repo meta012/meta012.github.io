@@ -9,8 +9,15 @@
 // $brand-dark: #373737;
 // $brand-light: #f4f6ef;
 
-// colors
-
-$navy: #bfe9ff;
-$pink: #ff6e7f;
-$transparent-black: rgba(0,0,0,0.1);
+// colors 
+    // main (twisted spot palette)
+$main-navy: #c0fcf9; 
+$main-pink: #ff6e7f;
+$main-green: #005b5e;
+$main-greenish: #47817e;
+$mid-color: #e0b5bc;
+    // others
+$black: #012627;
+$white: #e9f8f7;
+$transparent-greenish-black: rgba(1,38,39, 0.98);
+$transparent-pure-black: rgba(0,0,0, 0.1);
