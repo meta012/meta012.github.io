@@ -7,6 +7,26 @@
 //     }
 // }
 
+// circle
+@mixin circle ($rad, $height, $width, $bg, $color) {
+    -webkit-border-radius: $rad;
+    -moz-border-radius: $rad;
+    -ms-border-radius: $rad;
+    border-radius: $rad;
+
+    height: $height;
+    width: $width;
+
+    line-height: $height;
+    text-align: center;
+
+    background: $bg;
+    color: $color;
+
+    margin: 0 auto;
+}
+
+// bounce words in
 @mixin bounce-in ($trans, $opac) {
     transform: $trans;
     transition: 
@@ -14,6 +34,7 @@
         transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+// scroll words out
 @mixin scroll-out ($opac) {
     transition: 
         opacity $opac, 
