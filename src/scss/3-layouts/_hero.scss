@@ -8,30 +8,30 @@
     background: linear-gradient(to right, $main-navy, $main-pink); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: cover;
+
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
     border-style: groove;
     padding: 0 20vw;
-    color: $main-green;
 
     p {
         @include circle (100%, 150px, 170px, $transparent-pure-black, white);
-        font-size: 1.7rem;
-        color: $main-greenish;
+        
         position: relative;
-        text-align: center;
+        @include font($fs: 1.7rem, $lh: -1vh, $color: $main-greenish); //no idea, why -1vh
         margin-bottom: -9vh;
     }
 
     h1 {
         position: relative;
-        font-size: 3.4vw;
-        text-align: center;
+        @include font($fs: 3.4vw, $lh: 1.3);
         background: linear-gradient(to right, $main-pink, $main-navy);
         //background: $main-greenish;
-        padding: 1rem 0;
+        text-align: center;
+        padding: 1rem 1rem;
         border-radius: 50px 0;
 
         &::before, 

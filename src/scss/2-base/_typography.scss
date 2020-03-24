@@ -1,4 +1,31 @@
 /* Typography.scss */
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700');
+
+$main-ff: $font-stack-georgia; //bourbon -changeable(consolas?)
+
+$ff-ss: "PT Sans", sans-serif;
+$ff-ss-2: "Titilium Web", sans-serif;
+
+$fw-n: 400; // normal
+$fw-b: 900; // bold
+
+@mixin font($fs, $ls: 0, $color: $main-green, $lh:1, $tt: none, $td: none, $ff: $main-ff) {
+    font-family: $ff;
+    font-size: $fs;
+    letter-spacing: $ls;
+    color: $color;
+    line-height: $lh;
+    text-transform: $tt;
+    text-decoration: $td;
+}
+
+// @font-face {
+//     font-family: 'MyWebFont';
+//     src: url("../fonts/arcadeclassic.ttf")  format('truetype'), /* Safari, Android, iOS */   
+//         url("../fonts/silkscreen.eot") format("eot"),
+// 		url("../fonts/silkscreen.woff2") format("woff2"),
+// 		url("../fonts/silkscreen.woff") format("woff"),
+//         url("../fonts/silkscreen.svg") format("svg");
+// }

@@ -9,15 +9,30 @@
 }
 
 body {
-    font-family: $font-stack-consolas;
+    font-family: $main-ff;
+    height: 100%;
+    line-height: 1.9;
 }
 
-.container {
-    width: 80%;
-    margin: 2rem auto;
-    p {
-        margin: 1rem 0;
+h1 {
+    @include font($fs: 3.125rem, $lh: 1.2);
+    span {
+        @include font($fs: 3rem, $color:$main-pink, $ff:$ff-ss);
+        display: block;  // maybe???
     }
 }
+
+h2 {
+    @include font($fs: 2rem, $color:$black, $ff:$ff-ss-2);
+}
+
+
+// .container {
+//     width: 80%;
+//     margin: 2rem auto;
+//     p {
+//         margin: 1rem 0;
+//     }
+// }
 
 

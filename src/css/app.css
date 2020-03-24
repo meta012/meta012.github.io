@@ -4,7 +4,7 @@
 /* bourbon */
 /* neat */
 /* base */
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@1");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700");
 :root {
   --font-family: system-ui, sans-serif;
@@ -1031,6 +1031,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*------------------------------
             BASE 
 -------------------------------*/
+/* Typography.scss */
 /* Common.scss */
 *,
 *::before,
@@ -1040,13 +1041,36 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   padding: 0; }
 
 body {
-  font-family: "Consolas", "monaco", monospace; }
+  font-family: "Georgia", "Times", "Times New Roman", serif;
+  height: 100%;
+  line-height: 1.9; }
 
-.container {
-  width: 80%;
-  margin: 2rem auto; }
-  .container p {
-    margin: 1rem 0; }
+h1 {
+  font-family: "Georgia", "Times", "Times New Roman", serif;
+  font-size: 3.125rem;
+  letter-spacing: 0;
+  color: #005b5e;
+  line-height: 1.2;
+  text-transform: none;
+  text-decoration: none; }
+  h1 span {
+    font-family: "PT Sans", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0;
+    color: #ff6e7f;
+    line-height: 1;
+    text-transform: none;
+    text-decoration: none;
+    display: block; }
+
+h2 {
+  font-family: "Titilium Web", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0;
+  color: #012627;
+  line-height: 1;
+  text-transform: none;
+  text-decoration: none; }
 
 /* Header.scss */
 .main-header {
@@ -1064,9 +1088,13 @@ body {
   -moz-box-shadow: 0 8px 6px -6px #999;
   box-shadow: 0 8px 6px -6px #999; }
   .main-header a {
-    text-decoration: none;
+    font-family: "Georgia", "Times", "Times New Roman", serif;
+    font-size: 1em;
+    letter-spacing: 0;
     color: inherit;
-    text-transform: uppercase; }
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none; }
   .main-header .nav-links {
     display: flex;
     list-style: none; }
@@ -1124,7 +1152,6 @@ body {
       background: #e9f8f7; }
 
 /* Footer.scss */
-/* Typography.scss */
 /*------------------------------
             LAYOUTS 
 -------------------------------*/
@@ -1143,8 +1170,7 @@ body {
   justify-content: center;
   align-items: center;
   border-style: groove;
-  padding: 0 20vw;
-  color: #005b5e; }
+  padding: 0 20vw; }
   .hero p {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -1157,17 +1183,27 @@ body {
     background: rgba(0, 0, 0, 0.1);
     color: white;
     margin: 0 auto;
-    font-size: 1.7rem;
-    color: #47817e;
     position: relative;
-    text-align: center;
+    font-family: "Georgia", "Times", "Times New Roman", serif;
+    font-size: 1.7rem;
+    letter-spacing: 0;
+    color: #47817e;
+    line-height: -1vh;
+    text-transform: none;
+    text-decoration: none;
     margin-bottom: -9vh; }
   .hero h1 {
     position: relative;
+    font-family: "Georgia", "Times", "Times New Roman", serif;
     font-size: 3.4vw;
-    text-align: center;
+    letter-spacing: 0;
+    color: #005b5e;
+    line-height: 1.3;
+    text-transform: none;
+    text-decoration: none;
     background: linear-gradient(to right, #ff6e7f, #c0fcf9);
-    padding: 1rem 0;
+    text-align: center;
+    padding: 1rem 1rem;
     border-radius: 50px 0; }
     .hero h1::before, .hero h1::after {
       content: '';

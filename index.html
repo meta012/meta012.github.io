@@ -33,20 +33,127 @@
 
     </header>
 
-
+    <!-- HOME -->
+    <!-- MAYBE ADD CLASS TO P AND H1 -->
     <div class="hero">
       <p>Welcome!</p>
-      <h1>My name is Mėta. <br>I'm a keen Software Engineering student</h1>
+      <h1>My name is Mėta. I'm a <span>keen</span> Software Engineering student</h1>
       
       <section class="scroll-down-btn">
-        <a href="#first-page"><span></span>See more!</a>
+        <a href="#about"><span></span>See more!</a>
       </section>
-    
     </div>
     
+    <!-- ABOUT ME -->
+    <section id="about" class="about-me">
+      <img class="about-img" src="img/profile.jpg" alt="a picture of Meta Bambalaite">
+      <h1 class="about-title">About <span>me</span></h1>
+      <div class="about-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu consectetur tortor, vel interdum orci. Quisque mi diam, consectetur in sem eu, placerat commodo velit. Morbi vel risus quis magna convallis elementum. Vestibulum urna massa, condimentum nec ullamcorper id, sodales vitae libero. Vivamus pellentesque tellus massa, a ornare ex sagittis a. Aenean et ex lacus. Quisque tincidunt porta ligula, a tincidunt elit vestibulum ut. Sed at lacus sit amet sem lobortis suscipit et sed neque. Fusce suscipit dolor id libero elementum vestibulum. Aenean scelerisque arcu sed dignissim iaculis. In tempus ut justo vel accumsan.</p>
+        <p>Maecenas eu orci magna. Nunc non laoreet mi. Maecenas mattis feugiat justo et auctor. Nullam pulvinar egestas est sit amet placerat. Fusce sollicitudin tellus dictum ornare bibendum. Praesent ac ex odio. Etiam congue malesuada hendrerit. Suspendisse potenti. Vestibulum pretium aliquam lorem et blandit.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+      <h1><span>My</span> projects</h1>
+      
+      <div class="project-items">
+        <!-- Project Item 1 -->
+        <figure class="project-item featured">
+          <img src="img/code2.jpg" alt="code background image">
+          <figcaption>
+            <h2 class="project-title">Project title</h2>
+            <p class="project-desc">A short description</p>
+            <a href="#" class="project-link">More info</a>
+          </figcaption>
+        </figure>
+        <!-- Project Item 2 -->
+        <figure class="project-item featured">
+          <img src="img/code.jpg" alt="code background image">
+          <figcaption>
+            <h2 class="project-title">Project title</h2>
+            <p class="project-desc">A short description</p>
+            <a href="#" class="project-link">More info</a>
+          </figcaption>
+        </figure>
+        <!-- Project Item 3 -->
+        <figure class="project-item featured">
+          <img src="img/code2.jpg" alt="code background image">
+          <figcaption>
+            <h2 class="project-title">Project title</h2>
+            <p class="project-desc">A short description</p>
+            <a href="#" class="project-link">More info</a>
+          </figcaption>
+        </figure>
+        <!-- Project Item 4 -->
+        <figure class="project-item featured">
+          <img src="img/code.jpg" alt="code background image">
+          <figcaption>
+            <h2 class="project-title">Project title</h2>
+            <p class="project-desc">A short description</p>
+            <a href="#" class="project-link">More info</a>
+          </figcaption>
+        </figure>
+        <!-- Project Item 5 -->
+        <figure class="project-item featured">
+          <img src="img/code2.jpg" alt="code background image">
+          <figcaption>
+            <h2 class="project-title">Project title</h2>
+            <p class="project-desc">A short description</p>
+            <a href="#" class="project-link">More info</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <h1>Contact <span>me</span></h1>
+      <form action="">
+        <label class="name">Name:
+          <input type="text" id="name">
+        </label>
+        <label class="email">Email:
+          <input type="email" id="email">
+        </label>
+        <label class="message">Message:
+          <textarea name="" id="message"></textarea>
+        </label>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer> 
+      <p>Follow me on social media</p>
+      <div class="social-icons">
+        <img class="social-icon" src="img/icons/linkedin.png" alt="linkedin icon">
+        <img class="social-icon" src="img/icons/github.png" alt="github icon">
+        <img class="social-icon" src="img/icons/facebook.png" alt="facebook icon">
+      </div>
+      <p class="copyright">
+        <!-- CHANGE THIS!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        Copyright &copy; 
+        <script type="text/javascript">document.write(new Date().getFullYear());</script>
+        Mėta Bambalaitė
+      </p>
+    </footer>
     
 
-    <div id="first-page" class="container" data-aos='fade-down'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="first-page" class="container" data-aos='fade-down'>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu consectetur tortor, vel interdum orci. Quisque mi diam, consectetur in sem eu, placerat commodo velit. Morbi vel risus quis magna convallis elementum. Vestibulum urna massa, condimentum nec ullamcorper id, sodales vitae libero. Vivamus pellentesque tellus massa, a ornare ex sagittis a. Aenean et ex lacus. Quisque tincidunt porta ligula, a tincidunt elit vestibulum ut. Sed at lacus sit amet sem lobortis suscipit et sed neque. Fusce suscipit dolor id libero elementum vestibulum. Aenean scelerisque arcu sed dignissim iaculis. In tempus ut justo vel accumsan.</p>
       <p>Maecenas eu orci magna. Nunc non laoreet mi. Maecenas mattis feugiat justo et auctor. Nullam pulvinar egestas est sit amet placerat. Fusce sollicitudin tellus dictum ornare bibendum. Praesent ac ex odio. Etiam congue malesuada hendrerit. Suspendisse potenti. Vestibulum pretium aliquam lorem et blandit.</p>
       <p>Donec eget arcu risus. Ut posuere placerat semper. In dapibus fermentum ex quis aliquet. Mauris eu placerat magna. Vestibulum vitae egestas ante. Ut erat mi, facilisis at risus auctor, varius tincidunt lectus. Nam ut ullamcorper urna. Ut vel pharetra augue. Morbi est nisl, vulputate tristique rutrum nec, mattis sed quam. Curabitur justo ante, commodo quis lorem et, venenatis fermentum mauris. Nam venenatis at erat a dapibus. Quisque lacinia mauris et tempor posuere.</p>
@@ -92,7 +199,7 @@
         Copyright &copy; 2020
       </footer>
 
-    </div> 
+    </div>  -->
 
 
 
