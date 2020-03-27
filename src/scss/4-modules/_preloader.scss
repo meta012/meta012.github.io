@@ -1,0 +1,80 @@
+/* Preloader.scss */
+
+body {
+    overflow: hidden;
+}
+
+.preloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20vh;
+    z-index: 100;
+    transition: opacity 0.5s ease;
+    
+    
+    .fly-in-text {
+        list-style: none;
+        font-weight: bolder;
+        font-size: 6.5vw;
+        letter-spacing: 0.6vw;
+        background: #ff6e7f;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #47817e, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #47817e, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+        li {
+            // to make letters gradient color
+            mix-blend-mode: screen;  //screen with white white
+            background-color: white;  
+            box-shadow: 2.4vw 0px 0px white;
+
+            display: inline-block;
+            opacity: 1;
+            transition: all 1.7s ease;
+        }
+        
+        &.hidden {
+            background: white;
+            li {
+                opacity: 0;
+
+                &:nth-child(1) {
+                    transform: translateX(-200px) translateY(-200px);
+                }
+                &:nth-child(2) {
+                    transform: translateX(20px) translateY(100px);
+                }
+                &:nth-child(3) {
+                    transform: translateX(-150px) translateY(-80px);
+                }
+                &:nth-child(4) {
+                    transform: translateX(10px) translateY(-200px);
+                }
+                &:nth-child(5) {
+                    transform: translateX(-300px) translateY(200px);
+                }
+                &:nth-child(6) {
+                    transform: translateX(20px) translateY(-20px);
+                }
+                &:nth-child(7) {
+                    transform: translateX(30px) translateY(200px);
+                }
+                &:nth-child(8) {
+                    transform: translateX(-200px) translateY(-200px);
+                }
+            }
+        }
+    } 
+}
+
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+

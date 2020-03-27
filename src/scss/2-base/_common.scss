@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: $main-ff;
     height: 100%;
@@ -26,6 +30,17 @@ h2 {
     @include font($fs: 2rem, $color:$black, $ff:$ff-ss-2);
 }
 
+.ghost-svg {
+    height: 40px;
+    position: absolute;
+    z-index: 6;
+}
+.ladder-svg {
+    height: 150px;
+    position: absolute;
+    z-index: 5;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
 
 // .container {
 //     width: 80%;

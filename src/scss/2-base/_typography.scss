@@ -9,7 +9,7 @@ $ff-ss: "PT Sans", sans-serif;
 $ff-ss-2: "Titilium Web", sans-serif;
 
 $fw-n: 400; // normal
-$fw-b: 900; // bold
+$fw-b: 700; // bold
 
 @mixin font($fs, $ls: 0, $color: $main-green, $lh:1, $tt: none, $td: none, $ff: $main-ff) {
     font-family: $ff;
