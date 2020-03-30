@@ -1,0 +1,99 @@
+/* Projects.scss */
+
+.projects {
+    text-align: center;
+    background: $secondary-pink;
+    padding: 3em 0;
+
+    h1 {
+        margin-bottom: 1em;
+    }
+}
+
+.project-items {
+    display: flex;
+    flex-wrap: wrap;
+    @include container;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 20rem;
+    
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    figcaption {
+        position: absolute;
+        top: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 2em;
+        background: rgba($black, 0.75);
+        color: $white;
+        text-align: left;
+        display: flex;
+        flex-direction: column; 
+        transition: top ease-in-out 250ms;
+    }
+
+    &:hover figcaption,
+    &:focus figcaption {
+        top: 0;
+    }
+}
+
+.project-title {
+    color: $white;
+    font-size: 1rem;
+    margin-bottom: auto;
+}
+
+.project-desc {
+    display: none;
+}
+
+.project-link {
+    color: $white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-bottom: 2px solid $white;
+    align-self: flex-start;
+
+    &::after {
+        content: url(../img/arrow.svg);
+        display: inline-block;
+        height: 0.8em;
+        width: 0.8em;
+        margin-left: .5em;
+        filter: invert(78%) sepia(2%) saturate(3022%) hue-rotate(306deg) brightness(112%) contrast(105%);
+    }
+}
+
+@supports (display: grid) {
+    .project-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5em;
+    }
+
+    .project-item.featured {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+
+    .project-title {
+        .featured & {
+            font-size: 2rem;
+        }
+    }
+    .project-desc {
+        .featured & {
+            display: block;
+        }
+    }
+}

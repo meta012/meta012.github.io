@@ -2,8 +2,11 @@
 
 // colors 
     // main (twisted spot palette)
-$main-navy: #c0fcf9; 
+$main-navy: #c0fcf9;
+$secondary-navy: #d8fdfb;
 $main-pink: #ff6e7f;
+$secondary-pink: #ffd5da;
+
 $main-green: #005b5e;
 $main-greenish: #47817e;
 $mid-color: #e0b5bc;
@@ -12,3 +15,6 @@ $black: #012627;
 $white: #e9f8f7;
 $transparent-greenish-black: rgba(1,38,39, 0.98);
 $transparent-pure-black: rgba(0,0,0, 0.1);
+
+// transition time
+$trans-header: background 0.8s ease;

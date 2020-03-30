@@ -10,7 +10,7 @@
     padding: 0 10vw;
     color: $main-green;
     z-index: 50;
-    transition: .4s ease-out;
+    transition: 0.4s ease-out;
 
     // shadow under navbar
     -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -19,15 +19,17 @@
     
     a {
         @include font($fs: 1em, $color: inherit, $tt: uppercase);
+        transition: $trans-header;
+        outline: none;
     }
     .nav-links {
         display: flex;
         list-style: none;
-
+        
         .nav-link {
             // side-navbar scroll out on close 
             @include scroll-out (0.4s ease-in-out);
-            
+
             &:nth-of-type(2) {
                 transition-delay: 0.1s;;
             }
@@ -41,6 +43,7 @@
             a {
                 margin: 0.8rem;  // space between navbar links
                 padding: 1rem 0.5rem;
+                outline: none;
             }
             a:hover {
                 background: rgba(255,255,255, 0.2);
@@ -63,7 +66,7 @@
             height: 2px;
             width: 20px;
             border-radius: 4px;
-            transition: background .8s ease;
+            transition: $trans-header;
 
             &::before, &::after {
                 content: '';
@@ -71,8 +74,8 @@
                 height: 100%;
                 width: 100%;
                 border-radius: 4px;
-                background: inherit;
-                transition: background .8s ease;
+                background: $main-green;
+                transition: $trans-header;
             }
             &::before {
                 transform: translateY(-5px);

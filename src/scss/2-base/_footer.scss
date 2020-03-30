@@ -1,6 +1,31 @@
 /* Footer.scss */
 
-// footer {
-//     text-align: center;
-//     padding: 40px 0;
-// }
+footer {
+    background: $black;
+    padding: 2em 0;
+    text-align: center;
+    color: $white;
+}
+
+.social-icons {
+    @include container($max-width: 15em);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.social-icon {
+    width: 25%;
+    height: 25%;
+}
+
+.copyright {
+    &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        background: rgba($white, 0.35);
+        margin: 1em auto;
+        width: 25%;
+    }
+}

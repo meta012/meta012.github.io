@@ -7,6 +7,21 @@
 //     }
 // }
 
+
+@mixin container($width: 90%, $margin: 0em auto, $max-width: 65em) {
+    width: $width;
+    margin: $margin;
+    max-width: $max-width;
+}
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
 // circle
 @mixin circle ($rad, $height, $width, $bg, $color) {
     -webkit-border-radius: $rad;

@@ -1,0 +1,67 @@
+/* Scroll-down-btn.scss */
+
+.scroll-down-btn {
+    margin-top: 20vh;
+    
+    a {
+        display: inline-flex;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        color: $main-green;
+        font : normal 400 18px/1 'Josefin Sans', sans-serif;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+        outline: none; //to remove border on click
+
+        &:hover {
+            opacity: 0.5;
+        }
+        
+        span {
+            position: relative;
+            top: -12vh;
+            left: 60%;
+            width: 24px;
+            height: 24px;
+            margin-left: -24px;
+            border-left: 2px solid $black;
+            border-bottom: 2px solid $white;
+            
+            -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+            -webkit-animation: arrow-move-down 1.5s infinite;
+            animation: arrow-move-down 1.5s infinite;
+            
+            box-sizing: border-box;
+        }
+    }
+    
+}
+  
+@-webkit-keyframes arrow-move-down {
+    0% {
+      -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}
+@keyframes arrow-move-down {
+    0% {
+      transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}

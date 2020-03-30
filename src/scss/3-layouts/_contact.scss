@@ -1,0 +1,47 @@
+/* Contact.scss */
+
+.contact {
+    @include container;
+    padding: 3em 0;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    color: $main-green;
+    
+}
+
+#name, #email, #message {
+    display: block;
+    width: 100%;
+    background: $secondary-navy;
+    border: 1px solid $main-green;
+    &:focus {
+        border-color:yellowgreen;
+    }
+}
+
+.button {
+    display: block;
+    width: 25%;
+    margin-top: 2em;
+    margin-left: auto;
+    background: $main-green;
+    border: none;
+    color: $white;
+
+    &:focus {
+        border: none;
+        outline: none;
+        background: $main-greenish;
+    }
+    &:hover {
+        background: $main-greenish;
+        transition: 0.5s;
+    }
+}

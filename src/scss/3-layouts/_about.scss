@@ -1,0 +1,36 @@
+/* About.scss */
+
+.about-me {
+    @include container;
+    @include clearfix;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.about-img {
+    max-height: 25em;
+}
+
+@supports (display: grid) {
+    .about-me {
+        display: grid;
+        grid-template-columns: [portf-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [portf-end];
+    }
+    .about-img {
+        grid-column: portf-start / img-end;
+        grid-row: 1 / 2;
+    }
+    .about-title {
+        grid-column: name-start / portf-end;
+        grid-row: 1 / 2;
+    }
+    .about-text {
+       grid-column: portf-start / portf-end;
+    }
+}
+
+@media screen and (min-width: 650px) { //CHANGE!!!
+    .about-img {
+        float: left;
+        margin-right: 2em;
+    }
+}
